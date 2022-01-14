@@ -35,6 +35,9 @@ else
   set noswapfile
   set encoding=UTF-8
   set guifont="Fira Code"
+  set spelllang=en_gb
+  set nospell
+  set mousemodel="popup_setpos"
 
   " Remap Splits
   nnoremap <C-J> <C-W><C-J>

@@ -6,4 +6,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'crusoexia/vim-monokai'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'terrortylor/nvim-comment'
+  Plug 'kamykn/spelunker.vim'
+  Plug 'kamykn/popup-menu.nvim'
 call plug#end()
