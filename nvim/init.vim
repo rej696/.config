@@ -58,7 +58,7 @@ else
   lua require('mylsp')
 
   " status line lualine
-  lua require'lualine'.setup { options = {icons_enabled = false, theme = "molokai"}}
+  lua require'lualine'.setup { options = {icons_enabled = false, theme = "molokai", section_separators = '', component_separators = '' }}
 
   lua require('nvim_comment').setup()
 
