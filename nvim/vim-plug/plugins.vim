@@ -8,5 +8,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'terrortylor/nvim-comment'
   Plug 'kamykn/spelunker.vim'
   Plug 'kamykn/popup-menu.nvim'
-  Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 call plug#end()
