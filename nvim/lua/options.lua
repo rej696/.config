@@ -36,6 +36,11 @@ vim.o.completeopt        = "menuone,noinsert,noselect"
 vim.o.wildmode           = "longest,full"                -- Display auto-complete in Command Mode
 vim.o.updatetime         = 300                           -- Delay until write to Swap and HoldCommand event
 
+-- Fuzzy search
+vim.opt.path:append('**')
+vim.opt.wildignore:append('__pycache__/*')
+vim.o.wildignorecase = true
+
 -- Disable default plugins
 -- vim.g.loaded_netrwPlugin = false
 
