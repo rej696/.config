@@ -7,6 +7,20 @@ local inoremap = Utils.inoremap
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Remap Splits
+nnoremap("<A-Left>", "<C-W><Left>")
+nnoremap("<A-Down>", "<C-W><Down>")
+nnoremap("<A-Up>", "<C-W><Up>")
+nnoremap("<A-Right>", "<C-W><Right>")
+nnoremap("<A-h>", "<C-W><h>")
+nnoremap("<A-j>", "<C-W><j>")
+nnoremap("<A-k>", "<C-W><k>")
+nnoremap("<A-l>", "<C-W><l>")
+
+-- Buffer Navigation
+nnoremap("<A-Home>", ":bprev<CR>")
+nnoremap("<A-End>", ":bnext<CR>")
+
 -- Local list
 nnoremap("<leader>lo", ":lopen<CR>")
 nnoremap("<leader>lc", ":lclose<CR>")
