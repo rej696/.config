@@ -19,7 +19,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
   -- Set some keybinds conditional on server capabilities
-  buf_set_keymap("n", "<space>F", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+  buf_set_keymap("n", "<space>F", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 
 end
 
@@ -56,6 +56,13 @@ local function make_config()
     on_attach = on_attach,
   }
 end
+
+-- Haskell
+local hls_config = make_config()
+hls_config.root_dir = require 'lspconfig'.util.root_pattern('.git')
+-- hls_config.cmd = {"haskell-language-server-wrapper-1.7.0.0", "--lsp"}
+-- hls_config.cmd = {"haskell-language-server-wrapper-1.6.1.0", "--lsp"}
+require'lspconfig'.hls.setup(hls_config)
 
 -- nvim lsp installer
 local lsp_installer = require("nvim-lsp-installer")
